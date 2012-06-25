@@ -1,0 +1,13 @@
+CtrlP-Memolist
+==============
+
+This plugin is a extension of kien/ctrlp.vim for glidenote/memolist.vim.
+
+- [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim)
+- [glidenote/memolist.vim](https://github.com/glidenote/memolist.vim)
+
+Author
+------
+
+Shintaro Kaneko <kaneshin0120@gmail.com>
+

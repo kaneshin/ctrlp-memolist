@@ -26,11 +26,11 @@ endfunc
 
 function! ctrlp#memolist#accept(mode, str)
   call ctrlp#exit()
-  exe "edit ".a:str
+  exe "edit ".g:memolist_path."/".a:str
 endfunction
 
 function! ctrlp#memolist#enter()
-  let s:list = split(globpath(g:memolist_path, "*"), "\n")
+  let s:list = map(split(globpath(g:memolist_path, "*"), "\n"), 'fnamemodify(v:val, ":t")')
 endfunction
 
 function! ctrlp#memolist#exit()
